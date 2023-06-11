@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PewPew_Hrdy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="THE MIGHTY PEW PEW GAME" Height="450" Width="800">
+    <Canvas Name="MyCanvas" MouseLeftButtonDown="ClickOnCanvas" Background="DarkGray">
+
+
+        <Label Name="txtScore" FontSize="20" FontWeight="Bold" Content="Skóre: 0"/>
+        <Label Name="txtLastScore" FontSize="20" FontWeight="Bold" Content="Poslední Skóre: 0" Foreground="White" HorizontalAlignment="Left" Canvas.Left="139" VerticalAlignment="Center"/>
+
+        <Rectangle Name="healthBar" Stroke="Black" Width="350" Height="27" Fill="Red" Canvas.Left="440" Canvas.Top="5"/>
+    </Canvas>
 </Window>
